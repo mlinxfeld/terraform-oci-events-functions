@@ -28,21 +28,21 @@ variable "bastion_ports" {
 }
 
 variable "ocir_namespace" {
-  default = "fr5tvfiq2xhq"
+  default = ""
 }
 
 variable "ocir_repo_name" {
-  default = "functions"
+  default = ""
 }
 
 variable "ocir_docker_repository" {
-  default = "fra.ocir.io"
+  default = ""
 }
 
 variable "ocir_user_name" {
-  default = "martin.linxfeld@foggykitchen.com"
+  default = ""
 }
 
 variable "ocir_user_password" {
-  default = "sECj-58mCIKI2yQmN.-v"
+  default = ""
 }

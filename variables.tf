@@ -32,7 +32,7 @@ variable "ocir_namespace" {
 }
 
 variable "ocir_repo_name" {
-  default = "mlinxfeld"
+  default = "functions"
 }
 
 variable "ocir_docker_repository" {

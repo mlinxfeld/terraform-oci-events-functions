@@ -8,7 +8,7 @@ In this repository I have documented my hands-on experience with Terrafrom for t
 
 With the usage of this example HCL code you can build topology documented by diagram below. This topology is extremly simplified for education purposes and rather cannot be used for production implementations. 
 
-![](terraform-oci-event-functions.jpg)
+![](terraform-oci-events-functions.jpg)
 
 ## How to use code 
 
@@ -161,6 +161,13 @@ FoggyKitchenWebserver1_PublicIP = [
 ### STEP 6.
 Confirm that manual backups has tagging information inherited from the volumes:
 
+* Backup of Boot Volume*
+
+![](manual_oci_boot_volume_backup_with_tagging.jpg)
+
+* Backup of Block Volume*
+
+![](manual_oci_volume_backup_with_tagging.jpg)
 
 ### STEP 7.
 After testing the environment you can remove the whole OCI infra. You should just run *terraform destroy* (type **yes** for confirmation of the destroy phase):

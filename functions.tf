@@ -5,15 +5,17 @@ resource "oci_functions_application" "FoggyKitchenFnApp" {
 }
 
 resource "oci_functions_function" "FoggyKitchenUpdateTagForBootVolumeBackupFn" {
+    depends_on = [null_resource.FoggyKitchenFnSetup]
     application_id = oci_functions_application.FoggyKitchenFnApp.id
     display_name = "FoggyKitchenUpdateTagForBootVolumeBackupFn"
-    image = "fra.ocir.io/fr5tvfiq2xhq/mlinxfeld/updatetagforbootvolumebackupfn:0.0.22"
-    memory_in_mbs = "256" # memoryInMBs should be a MB value that is one of the supported shapes (128, 256, 512, 1024)
+    image = "${var.ocir_docker_repository}/${var.ocir_namespace}/${var.ocir_repo_name}/updatetagforbootvolumebackupfn:0.0.1"
+    memory_in_mbs = "256" 
 }
 
 resource "oci_functions_function" "FoggyKitchenUpdateTagForVolumeBackupFn" {
+    depends_on = [null_resource.FoggyKitchenFnSetup]
     application_id = oci_functions_application.FoggyKitchenFnApp.id
     display_name = "FoggyKitchenUpdateTagForVolumeBackupFn"
-    image = "fra.ocir.io/fr5tvfiq2xhq/mlinxfeld/updatetagforvolumebackupfn:0.0.2"
-    memory_in_mbs = "256" # memoryInMBs should be a MB value that is one of the supported shapes (128, 256, 512, 1024)
+    image = "${var.ocir_docker_repository}/${var.ocir_namespace}/${var.ocir_repo_name}/updatetagforvolumebackupfn:0.0.1"
+    memory_in_mbs = "256" 
 }

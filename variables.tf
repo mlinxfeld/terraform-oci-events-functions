@@ -26,3 +26,23 @@ variable "OsImage" {
 variable "bastion_ports" {
   default = ["22"]
 }
+
+variable "ocir_namespace" {
+  default = "fr5tvfiq2xhq"
+}
+
+variable "ocir_repo_name" {
+  default = "mlinxfeld"
+}
+
+variable "ocir_docker_repository" {
+  default = "fra.ocir.io"
+}
+
+variable "ocir_user_name" {
+  default = "martin.linxfeld@foggykitchen.com"
+}
+
+variable "ocir_user_password" {
+  default = "sECj-58mCIKI2yQmN.-v"
+}

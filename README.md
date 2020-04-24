@@ -19,11 +19,11 @@ Within OCI Cloud Shell clone the repo from GitHub by executing the command as fo
 ```
 martin_lin@cloudshell:terraform-oci-events-functions (eu-frankfurt-1)$ git clone https://github.com/mlinxfeld/terraform-oci-events-functions.git
 Cloning into 'terraform-oci-events-functions'...
-remote: Enumerating objects: 45, done.
-remote: Counting objects: 100% (45/45), done.
-remote: Compressing objects: 100% (31/31), done.
-remote: Total 45 (delta 19), reused 40 (delta 14), pack-reused 0
-Unpacking objects: 100% (45/45), done.
+remote: Enumerating objects: 62, done.
+remote: Counting objects: 100% (62/62), done.
+remote: Compressing objects: 100% (46/46), done.
+remote: Total 62 (delta 22), reused 55 (delta 15), pack-reused 0
+Unpacking objects: 100% (62/62), done.
 
 martin_lin@cloudshell:terraform-oci-events-functions (eu-frankfurt-1)$ cd terraform-oci-events-functions/
 
@@ -81,16 +81,14 @@ martin_lin@cloudshell:terraform-oci-events-functions (eu-frankfurt-1)$  source s
 Run *terraform init* with upgrade option just to download the lastest neccesary providers:
 
 ```
-martin_lin@cloudshell:terraform-oci-events-functions (eu-frankfurt-1)$  terraform init -upgrade
+martin_lin@cloudshell:terraform-oci-events-functions (eu-frankfurt-1)$ terraform init
 
 Initializing the backend...
 
 Initializing provider plugins...
 - Checking for available provider plugins...
 - Downloading plugin for provider "null" (hashicorp/null) 2.1.2...
-- Downloading plugin for provider "random" (hashicorp/random) 2.2.1...
-- Downloading plugin for provider "local" (hashicorp/local) 1.4.0...
-- Downloading plugin for provider "oci" (hashicorp/oci) 3.64.0...
+- Downloading plugin for provider "oci" (hashicorp/oci) 3.72.0...
 
 The following providers do not have any version constraints in configuration,
 so the latest version was installed.
@@ -100,9 +98,7 @@ changes, it is recommended to add version = "..." constraints to the
 corresponding provider blocks in configuration, with the constraint strings
 suggested below.
 
-* provider.local: version = "~> 1.4"
 * provider.null: version = "~> 2.1"
-* provider.random: version = "~> 2.2"
 
 Terraform has been successfully initialized!
 

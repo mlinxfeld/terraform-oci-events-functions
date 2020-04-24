@@ -161,11 +161,11 @@ FoggyKitchenWebserver1_PublicIP = [
 ### STEP 6.
 Confirm that manual backups has tagging information inherited from the volumes:
 
-* Backup of Boot Volume*
+**Backup of Boot Volume**
 
 ![](manual_oci_boot_volume_backup_with_tagging.jpg)
 
-* Backup of Block Volume*
+**Backup of Block Volume**
 
 ![](manual_oci_volume_backup_with_tagging.jpg)
 
